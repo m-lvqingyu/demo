@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lv.demo.mapper.SmsTemplateMapper">
+
+    <resultMap id="BaseResultMap" type="com.lv.demo.pojo.SmsTemplate">
+            <id property="id" column="id" />
+            <result property="signName" column="sign_name" />
+            <result property="templateCode" column="template_code" />
+            <result property="templateParam" column="template_param" />
+            <result property="type" column="type" />
+            <result property="platform" column="platform" />
+            <result property="status" column="status" />
+            <result property="delStatus" column="del_status" />
+            <result property="createBy" column="create_by" />
+            <result property="createTime" column="create_time" />
+            <result property="updateBy" column="update_by" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,sign_name,template_code,template_param,type,platform,
+        status,del_status,create_by,create_time,update_by,
+        update_time
+    </sql>
+</mapper>

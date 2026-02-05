@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo
+  profiles:
+    active: dev
+server:
+  port: 8080
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    name: Demo
+    path: D:\logger\
+ali:
+  access:
+    key: 1
+    secret: 2
+
+user:
+  worker:
+    id: 0
+  datacenter:
+    id: 0

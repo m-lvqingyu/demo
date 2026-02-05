@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:sharding-standalone.yml
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+
+# MyBatis-Plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+wechat:
+  app:
+    id: 121343423
+    secret: 324342j03423jde
+ip:
+  filter:
+    enabled: true
+    # 白名单模式：只允许这些 IP 访问
+    white-list:
+      - 127.0.0.1
+
+    # 黑名单模式：禁止这些 IP 访问（如果 white-list 为空，则启用黑名单）
+    black-list:
+      - 10.0.0.1
+      - 172.16.0.*
